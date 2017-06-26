@@ -1,0 +1,6 @@
+*.log
+.idea
+config.ini
+.DS_Store
+Runtime
+

@@ -1,0 +1,30 @@
+<include file="public:header" />
+	<div class="container">
+        <img src="__PUBLIC__/config/img/{$banner}" class="bannerImg" />
+        <div class="contentContainer">
+        	<div class="pageTitleContainer">
+            	<div class="pageTitle">业务板块</div>
+                <div class="pageSubtitle"><span class="pageSubtitleLine"></span>BUSINESS<span class="pageSubtitleLine"></span></div>
+            </div>
+            <div class="businessBigContainer">
+            	<div class="businessContainer clear">
+            		<foreach name="result['result']" item="item">
+	                	<!--不良资产团队-->
+	                	<a href="__APP__/Segments/info?id={$item['id']}" class="businessItemContainer noLeft">
+	                    	<div class="newsListImgContainer businessItemImg">
+	                    		<if condition="$item['logo'] neq ''">
+	                            	<img src="__ROOT__/Uploads/images/segments/{$item['logo']}" style="width: 343px;height: auto;"/>
+	                            </if>
+	                        </div>
+	                        <div class="businessItemTitle">{$item['name']}<i class="businessItemTitleIcon"></i></div>
+	                        <div class="businessItemText">
+	                        	{$item['desc']}
+	                        </div>
+	                        <div class="businessItemBtn">More</div>
+	                    </a>
+                    </foreach>
+                </div>
+            </div>
+        </div>
+    </div>
+<include file="public:footer" />

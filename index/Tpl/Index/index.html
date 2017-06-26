@@ -1,0 +1,18 @@
+<include file="public:header" />
+<div class="container">
+	<div class="bannerContainer">
+		<div class="bannerControl left">
+		</div>
+		<div class="bannerControl right">
+		</div>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<foreach name="banner" item="item">
+					<div class="swiper-slide" style="background-image:url(__PUBLIC__/config/img/{$item['url']});">
+					</div>
+				</foreach>
+			</div>
+		</div>
+	</div>
+</div>
+<include file="public:footer" />

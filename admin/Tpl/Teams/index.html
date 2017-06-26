@@ -1,0 +1,99 @@
+<include file="public:header" />
+<link href="__PUBLIC__/css/plugins/iCheck/custom.css" rel="stylesheet">
+<div class="row wrapper border-bottom white-bg page-heading">
+	<div class="col-lg-10">
+		<ol class="breadcrumb">
+			<a href="__URL__"><i class="fa fa-home"></i></a>
+            <li>
+                <a href="__URL__">首页</a>
+            </li>
+            <li>
+                <a>团队管理</a>
+            </li>
+            <li>
+                <strong>列表</strong>
+            </li>
+        </ol>
+	</div>
+</div>
+<div class="wrapper wrapper-content animated">
+	<div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+
+                <div class="ibox-content table-responsive">
+                    <div class="row">
+                        <div class="col-sm-12 m-b-xs">
+							<p>
+                                <a type="button" class="btn btn-w-m btn-danger" href="__APP__/Teams/add">新增</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover no-margins table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <!-- <th>#</th> -->
+                                    <th>编号</th>
+                                    <th>姓名</th>
+                                    <th>所属团队</th>
+                                    <th>图片</th>
+                                    <th>说明</th>
+									<th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <foreach name="result['result']" item="new">
+                                    <tr>
+                                        <td>{$new.id}</span></td>
+    									<td>{$new.name}</td>
+                                        <td>{$new.tname}</td>
+                                        <td>
+                                            <if condition="$new['logo'] neq ''">
+                                                <img src="{$new.logo}" alt="" style="width:100px;height:100px;">
+                                            </if>
+                                        </td>
+                                        <td>{$new.title}</td>
+                                        <td>
+    										<a href="__APP__/Teams/edit/id/{$new.id}">编辑</a>
+    										<a href="__APP__/Teams/delete/id/{$new.id}" onclick="return confirm('确认删除吗？')">删除</a>
+                                           <!--  <if condition="$new['status'] eq 0">
+    										  <a href="__APP__/Teams/status/id/{$new.id}/type/0">禁用</a>
+                                            <elseif condition="$new['status'] eq 1" />
+                                                <a href="__APP__/Teams/status/id/{$new.id}/type/1">启用</a>
+                                            </if> -->
+                                        </td>
+                                    </tr>
+                                </foreach>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+	<div class="row">
+	    <div class="col-sm-12 text-right">
+	        <div class="dataTables_paginate paging_simple_numbers" id="editable_paginate">
+	            <ul class="pagination">
+	                {$result.page}
+	            </ul>
+	        </div>
+	    </div>
+	</div>
+
+</div>
+<include file="public:footer" />
+<!-- iCheck -->
+<script src="__PUBLIC__/js/plugins/iCheck/icheck.min.js"></script>
+<script>
+   $(document).ready(function () {
+	   $('.i-checks').iCheck({
+		   checkboxClass: 'icheckbox_square-green',
+		   radioClass: 'iradio_square-green',
+	   });
+   });
+</script>

@@ -1,0 +1,32 @@
+<include file="public:header" />
+	<div class="container">
+        <img src="__PUBLIC__/config/img/{$banner}" class="bannerImg" />
+        <div class="contentContainer">
+        	<div class="pageTitleContainer">
+            	<div class="pageTitle">磐恩动态</div>
+                <div class="pageSubtitle"><span class="pageSubtitleLine"></span>NEWS<span class="pageSubtitleLine"></span></div>
+            </div>
+            <div class="newsListContainer">
+            	<foreach name="result" item="item">
+	            	<!--star-->
+	            	<a href="__APP__/News/info?id={$item['id']}" class="newsList">
+	                	<div class="newsListImgContainer">
+	                    	<img src="__ROOT__/Uploads/images/news/{$item['logo']}" />
+	                    </div>
+	                    <div class="newsListTextContainer">
+	                    	<div class="newsListTextTitle">{$item['title']}</div>
+	                        <div class="newsListTextSubtitle">{$item['from_str']}</div>
+	                        <div class="newsListTextContent">{$item['desc']|ssubstr=100,0}</div>
+	                    </div>
+	                    <div class="newListTimeContainer">
+	                    	<div class="newListTimeTimeLine"></div>
+	                    	<div class="newListTimeMonth">{$item['created_at']|date="m",###}</div>
+	                        <div class="newListTimeYear">{$item['created_at']|date="Y",###}</div>
+	                    </div>
+	                </a>
+               	</foreach>
+            </div>
+        </div>
+
+    </div>
+<include file="public:footer" />

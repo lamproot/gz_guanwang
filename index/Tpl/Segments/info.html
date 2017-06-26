@@ -1,0 +1,29 @@
+<include file="public:header" />
+	<div class="container">
+        <img src="__PUBLIC__/config/img/{$banner}" class="bannerImg" />
+        <div class="breadContainer">
+        	<div class="breadContent">
+            	<a href="__APP__/Segments/index" class="breadA">业务板块</a>
+                <span class="breadSeparate">></span>
+                <a class="breadA select">{$result['name']}</a>
+        	</div>
+        </div>
+        <div class="contentContainer">
+        	<div class="pageTitleContainer">
+            	<div class="pageTitle">{$result['name']}</div>
+                <div class="pageSubtitle"><span class="pageSubtitleLine"></span>{$result['ename']}<span class="pageSubtitleLine"></span></div>
+            </div>
+            <div class="pageIntroText">
+            	{$result['content']}
+            </div>
+            <!-- <div class="teamIntroContainer">
+                <div class="teamIntroContent">
+                	<div class="richManageContainer">
+                        <img src="img/yewu-m-map.jpg">
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
+<include file="public:footer" />

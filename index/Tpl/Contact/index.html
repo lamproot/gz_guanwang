@@ -1,0 +1,36 @@
+<include file="public:header" />
+<style type="text/css">
+	.companyTextContainer {
+	    border-bottom: 0px solid #ccc;
+	    padding-bottom: 70px;
+	}
+</style>
+<script>
+$(function(){
+	$(".tabDiv").bind("click",function(e){
+		$(".tabDiv").removeClass("select");
+		$(this).addClass("select");
+		var index=$(this).index(".tabDiv");
+		$(".teamIntroDisplayDiv").hide();
+		$(".teamIntroDisplayDiv").eq(index).show();
+	});
+});
+</script>
+<div class="container">
+    <img src="__PUBLIC__/config/img/{$banner}" class="bannerImg" />
+    <div class="contentContainer">
+    	<div class="pageTitleContainer">
+        	<div class="pageTitle">联系我们</div>
+            <div class="pageSubtitle"><span class="pageSubtitleLine"></span>CONTACT<span class="pageSubtitleLine"></span></div>
+        </div>
+        <div class="contactContainer">
+        	<div class="contactDiv" style="background-image: url(__PUBLIC__/config/img/{$result['contactLogo']['value']})">
+            	<div class="contactText">{$result['contactText']['value']}</div>
+                <div class="contactMail">
+                	<span>邮箱：</span><a href="{$result['contactMail']['value']}" class="mailClass">{$result['contactMail']['value']}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<include file="public:footer" />

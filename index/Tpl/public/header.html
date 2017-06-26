@@ -1,0 +1,36 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title><?php echo $_SESSION['GuanWang']['web_config'][0]['title']['value']; ?></title>
+<meta name='description' content="<?php echo $_SESSION['GuanWang']['web_config'][0]['description']['value']; ?>">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="keywords" content="<?php echo $_SESSION['GuanWang']['web_config'][0]['keywords']['value']; ?>"/>
+<!--build:css css/style.min.css-->
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/css/public.css">
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/css/style.css">
+<!-- endbuild -->
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/css/idangerous.swiper2.7.6.css" />
+<script src="__PUBLIC__/lib/jquery-1.11.3.min.js"></script>
+<script src="__PUBLIC__/lib/idangerous.swiper2.7.6.min.js"></script>
+<!-- endbuild -->
+<script type="text/javascript">
+$(function(){
+    changeHomeBannerHeight();
+  var mySwiper = $('.swiper-container').swiper({
+      autoplay : 5000,
+      speed:800,
+      loop: true
+  });
+  $(".bannerControl.left").bind("click",function(e){
+      mySwiper.swipePrev();
+  });
+   $(".bannerControl.right").bind("click",function(e){
+       mySwiper.swipeNext();
+  });
+})
+</script>
+</head>
+
+<body>

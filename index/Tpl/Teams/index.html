@@ -1,0 +1,57 @@
+<include file="public:header" />
+<style type="text/css">
+	.companyTextContainer {
+	    border-bottom: 0px solid #ccc;
+	    padding-bottom: 70px;
+	}
+</style>
+<script>
+$(function(){
+	$(".tabDiv").bind("click",function(e){
+		$(".tabDiv").removeClass("select");
+		$(this).addClass("select");
+		var index=$(this).index(".tabDiv");
+		$(".teamIntroDisplayDiv").hide();
+		$(".teamIntroDisplayDiv").eq(index).show();
+	});
+});
+</script>
+<div class="container">
+        <img src="__PUBLIC__/config/img/{$banner}" class="bannerImg" />
+        <div class="contentContainer">
+        	<div class="pageTitleContainer">
+            	<div class="pageTitle">团队介绍</div>
+                <div class="pageSubtitle"><span class="pageSubtitleLine"></span>TEAM<span class="pageSubtitleLine"></span></div>
+            </div>
+            <div class="teamIntroContainer">
+            	<div class="tabContainer clear">
+                    <foreach name="result['team_class']" item="item" key="key">
+                    	<div class="tabDiv <if condition='$key eq 0'>select</if>">{$item['name']}</div>
+                    </foreach>
+                </div>
+
+                <div class="teamIntroContent">
+                	<foreach name="result['team_class']" item="item" key="key">
+                		<div class="teamIntroDisplayDiv" style="<if condition='$key eq 0'>display:block;</if>">
+		                    <foreach name="result['teams']" item="item_item">
+			                	<if condition="$item_item['team_class_id'] eq $item['id']">
+			                    	<a class="newsList teamIntro">
+			                            <div class="newsListImgContainer">
+			                                <img src="img/zc1.jpg"/>
+			                            </div>
+			                            <div class="newsListTextContainer">
+			                                <div class="newsListTextTitle"><span class="important">{$item_item['name']}</span>{$item_item['title']}</div>
+			                                <div class="newsListTextSubtitle">{$item_item['degree']}</div>
+			                                <div class="newsListTextContent">{$item_item['content']}</div>
+			                            </div>
+			                        </a>
+			                    </if>
+			                </foreach>
+
+			            </div>
+		            </foreach>
+                </div>
+            </div>
+        </div>
+    </div>
+<include file="public:footer" />

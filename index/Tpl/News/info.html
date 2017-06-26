@@ -1,0 +1,21 @@
+<include file="public:header" />
+	<div class="container">
+        <img src="__PUBLIC__/config/img/{$banner}" class="bannerImg" />
+        <div class="breadContainer">
+        	<div class="breadContent">
+            	<a href="__APP__/News" class="breadA">新闻列表</a>
+                <span class="breadSeparate">></span>
+                <a class="breadA select">新闻详情</a>
+        	</div>
+        </div>
+        <div class="contentContainer">
+        	<div class="newsInfoContainer">
+            	<div class="newsInfoTitle">{$result['title']}</div>
+                <div class="newsInfoTime"></div>
+                <div class="newsInfoTextContainer">
+                	{$result['content']|html_entity_decode}
+                </div>
+            </div>
+        </div>
+    </div>
+<include file="public:footer" />

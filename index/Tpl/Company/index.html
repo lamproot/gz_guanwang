@@ -1,0 +1,80 @@
+<include file="public:header" />
+<style type="text/css">
+	.companyTextContainer {
+	    border-bottom: 0px solid #ccc;
+	    padding-bottom: 70px;
+	}
+</style>
+<div class="container">
+	<img src="__PUBLIC__/config/img/{$banner}" class="bannerImg" />
+	<div class="contentContainer">
+		<div class="pageTitleContainer">
+			<div class="pageTitle">
+				关于我们
+			</div>
+			<div class="pageSubtitle">
+				<span class="pageSubtitleLine">
+				</span>
+				ABOUT
+				<span class="pageSubtitleLine">
+				</span>
+			</div>
+		</div>
+		<div class="companyIntroContainer clear">
+
+			<foreach name="result" item="item">
+				<div class="companyTextContainer">
+					<div class="importantName">
+						{$item['name']}
+					</div>
+					<div class="smallName">
+						{$item['ename']}
+					</div>
+					<div class="companyText">
+						{$item['content']}
+					</div>
+				</div>
+			</foreach>
+
+			
+			<!-- <div class="cultureContainer">
+				<div class="importantName">
+					公司文化
+				</div>
+				<div class="smallName">
+					OUR CULTURE
+				</div>
+				<div class="cultureDiv clear">
+					<div class="cultrueItem item1">
+						<div class="cultrueItemImgDiv">
+							行为准则
+						</div>
+						<div class="cultrueItemTextDiv">
+							以客户为中心，合规运营，专业成就长期价值
+						</div>
+					</div>
+					<div class="cultrueItem item2">
+						<div class="cultrueItemImgDiv">
+							事业理念
+						</div>
+						<div class="cultrueItemTextDiv">
+							求实进取，勤勉精进
+						</div>
+					</div>
+					<div class="cultrueItem item3">
+						<div class="cultrueItemImgDiv">
+							磐恩精神
+						</div>
+						<div class="cultrueItemTextDiv">
+							彼此成就，共同担当
+						</div>
+					</div>
+					<div class="cultrueItem item4">
+					<div class="cultrueItemImgDiv">磐恩价值观</div>
+					<div class="cultrueItemTextDiv">谨慎决策，规范运营，创造长期价值。</div></div>
+				</div>
+			</div> -->
+		</div>
+	</div>
+</div>
+<include file="public:footer" />

@@ -1,0 +1,77 @@
+{
+    "web_config": [
+        {
+          "keywords": {
+              "//": "网站关键字",
+              "value": "小熊测试,小熊,测试,开发"
+          },
+          "description": {
+              "//": "网站描述",
+              "value": "小熊测试啊"
+          },
+          "record": {
+              "//": "网站底部备案内容",
+              "value": "公司邮箱:Demo1@penny-capital.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;京ICP备Demo号-1"
+          },
+          "title": {
+              "//": "官网名称",
+              "value": "官网名称"
+          },
+          "logo": {
+              "//": "Logo",
+              "value": "logo.png"
+          }
+        }
+    ],
+    "nav_banner_config": [
+        {
+            "name":"关于我们模块Nav-Banner",
+            "url": "banner-1.jpg"
+        },
+        {
+            "name":"业务板块模块Nav-Banner",
+            "url": "banner-2.jpg"
+        },
+        {
+            "name":"新闻板块模块Nav-Banner",
+            "url": "banner-3.jpg"
+        }
+    ],
+    "home_banner_config": [
+        {
+            "name":"首页banner01",
+            "url": "banner-large-1.jpg",
+            "sort":"0"
+        },
+        {
+            "name":"首页banner02",
+            "url": "banner-large-2.jpg",
+            "sort":"0"
+        },
+        {
+            "name":"首页banner03",
+            "url": "banner-large-3.jpg",
+            "sort":"0"
+        }
+    ],
+    "contact_config": [
+        {
+          "contactText": {
+              "//": "联系我们 相关配置contactText 联系我们描述",
+              "value": "潜在投资者及希望与磐恩资本建立联系的个人或者机构，请致信：磐恩邮箱"
+          },
+          "contactMail": {
+              "//": "contactMail 联系我们邮箱",
+              "value": "IR@penny-capital.com"
+          },
+          "contactTel": {
+              "//": "contactTel 联系我们电话",
+              "value": "18501372201"
+          },
+          "contactLogo": {
+              "//": "contactLogo 联系我们背景图片",
+              "value": "contactBg.jpg"
+          }
+        }
+    ]
+}

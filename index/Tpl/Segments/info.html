@@ -14,7 +14,7 @@
                 <div class="pageSubtitle"><span class="pageSubtitleLine"></span>{$result['ename']}<span class="pageSubtitleLine"></span></div>
             </div>
             <div class="pageIntroText">
-            	{$result['content']}
+            	{$result['content']|html_entity_decode}
             </div>
             <!-- <div class="teamIntroContainer">
                 <div class="teamIntroContent">

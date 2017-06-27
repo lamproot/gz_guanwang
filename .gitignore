@@ -2,5 +2,6 @@
 .idea
 config.ini
 .DS_Store
-Runtime
+*Runtime
 Public/config
+Uploads

@@ -18,8 +18,8 @@ date_default_timezone_set('Asia/Shanghai');
 session_start();
 error_reporting(1);
 $sitetitle = 'FileBox';
-$user = 'filebox';
-$pass = 'filebox';
+$user = 'lanwan';
+$pass = 'lanwanfinancial.com';
 $safe_num = 0;//设置多少次后禁止登陆，为0则不限制，建议为3-5
 $mail = 'i@hezi.be';//若有恶意登录，会发邮件到这个邮箱，前提是mail()函数可用！
 $meurl = $_SERVER['PHP_SELF'];

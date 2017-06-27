@@ -31,7 +31,7 @@
 						{$item['ename']}
 					</div>
 					<div class="companyText">
-						{$item['content']}
+						{$item['content']|html_entity_decode}
 					</div>
 				</div>
 			</foreach>

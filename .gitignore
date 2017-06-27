@@ -5,3 +5,5 @@ config.ini
 *Runtime
 Public/config
 Uploads
+index/Config
+admin/Config

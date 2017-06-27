@@ -457,7 +457,7 @@
 .companyText{
 	font-size:14px;
 	color:#666666;
-	margin-top:40px;
+	/*margin-top:40px;*/
 }
 .companyTextContainer{
 	border-bottom:1px dashed #eee;

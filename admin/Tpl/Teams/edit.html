@@ -33,7 +33,7 @@
                             <div class="col-sm-8">
                                 <select name="team_class_id" class="form-control">
                                     <foreach name="result['team_class']" item="team_class">
-                                        <option <if condition="$result['team_id'] eq $team_class.id ">selected="selected"</if> value="{$team_class.id}">{$team_class.name}</option>
+                                        <option <if condition="$result['team_id'] eq $team_class['id']">selected="selected"</if> value="{$team_class.id}">{$team_class.name}</option>
                                     </foreach>
                                 </select>
                             </div>

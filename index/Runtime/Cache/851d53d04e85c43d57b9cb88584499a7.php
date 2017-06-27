@@ -52,30 +52,30 @@ $(function(){
 <script type="text/javascript">
     function createHeader(){
         var headerStr='<meta name="viewport" content="width=device-width, initial-scale=1" /><div class="header">'+
-                            '<div class="logoImg"></div>'+
+                            '<div class="logoImg" style="background-image: url(__PUBLIC__/config/img/<?php echo $_SESSION['GuanWang']['web_config'][0]['logo']['value']; ?>);"></div>'+
                             '<div class="topNavBigContainer">'+
                                 '<div class="topNavContainer">'+
-                                    '<a href="index.html" class="topNav"><div>首页</div><div class="english">HOME</div></a>'+
+                                    '<a href="__APP__" class="topNav"><div>首页</div><div class="english">HOME</div></a>'+
                                     '<div class="topNavSelect"></div>'+
                                 '</div>'+
                                 '<div class="topNavContainer">'+
                                     '<a class="topNav"><div>关于磐恩</div><div class="english">ABOUT</div><div class="topNavSecondMenuIcon"></div></a>'+
                                     '<div class="topNavSelect"></div>'+
                                     '<div class="topNavSecondMenuContainer">'+
-                                        '<a href="companyIntro.html" class="topNavSecondMenuNav">公司简介</a>'+
-                                        '<a href="teamIntro.html" class="topNavSecondMenuNav">团队介绍</a>'+
-                                        '<a href="contact.html" class="topNavSecondMenuNav noBorder">联系我们</a>'+
+                                        '<a href="__APP__/Company" class="topNavSecondMenuNav">公司简介</a>'+
+                                        '<a href="__APP__/Teams" class="topNavSecondMenuNav">团队介绍</a>'+
+                                        '<a href="__APP__/Contact" class="topNavSecondMenuNav noBorder">联系我们</a>'+
                                     '</div>'+
                                 '</div>'+
                                 '<div class="topNavContainer">'+
-                                    '<a href="segments.html" class="topNav"><div>业务板块</div><div class="english">BUSINESS</div></a>'+
+                                    '<a href="__APP__/Segments" class="topNav"><div>业务板块</div><div class="english">BUSINESS</div></a>'+
                                     '<div class="topNavSelect"></div>'+
                                 '</div>'+
                                 '<div class="topNavContainer">'+
                                     '<a class="topNav"><div>新闻动态</div><div class="english">NEWS</div><div class="topNavSecondMenuIcon"></div></a>'+
                                     '<div class="topNavSelect"></div>'+
                                     '<div class="topNavSecondMenuContainer">'+
-                                        '<a href="articleList.html" class="topNavSecondMenuNav">行业文章</a>'+
+                                        '<a href="__APP__/News" class="topNavSecondMenuNav">行业文章</a>'+
                                         '<a href="pennyNewsList.html" class="topNavSecondMenuNav noBorder">磐恩动态</a>'+
                                     '</div>'+
                                 '</div>'+

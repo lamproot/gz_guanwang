@@ -301,11 +301,11 @@
 	-ms-transform:scale(1.1,1.1);
 }
 .newsListTextSubtitle{
-	font-size:12px;
+	font-size:15px;
 	color:#aaa;
 }
 .newsListTextContent{
-	font-size:13px;
+	font-size:15px;
 	color:#999;
 	margin-top: 20px;
 }

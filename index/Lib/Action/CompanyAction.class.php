@@ -54,6 +54,8 @@
 
 	    	$banner = $_SESSION['GuanWang']['nav_banner_config'][0]['url'];
 
+	    	$result['content'] = str_replace(array("\r\n", "\r", "\n"), "<br>", $result['content']);
+
 			$this -> assign('result', $result);
 
 			$this -> assign('banner', $banner);

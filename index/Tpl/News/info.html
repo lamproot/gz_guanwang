@@ -3,9 +3,22 @@
         <img src="__PUBLIC__/config/img/{$banner}" class="bannerImg" />
         <div class="breadContainer">
         	<div class="breadContent">
-            	<a href="__APP__/News" class="breadA">新闻列表</a>
+            	<a href="__APP__/News" class="breadA">
+                    <if condition="$result['type'] eq 0">
+                    公司动态
+                    <elseif condition="$result['type'] eq 1"/>
+                    投研视点
+                    <elseif condition="$result['type'] eq 2"/>
+                    业内资讯
+                    </if>列表</a>
                 <span class="breadSeparate">></span>
-                <a class="breadA select">新闻详情</a>
+                <a class="breadA select"><if condition="$result['type'] eq 0">
+                    公司动态
+                    <elseif condition="$result['type'] eq 1"/>
+                    投研视点
+                    <elseif condition="$result['type'] eq 2"/>
+                    业内资讯
+                    </if></a>
         	</div>
         </div>
         <div class="contentContainer">

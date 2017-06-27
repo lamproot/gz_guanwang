@@ -3,8 +3,27 @@
         <img src="__PUBLIC__/config/img/{$banner}" class="bannerImg" />
         <div class="contentContainer">
         	<div class="pageTitleContainer">
-            	<div class="pageTitle">磐恩动态</div>
-                <div class="pageSubtitle"><span class="pageSubtitleLine"></span>NEWS<span class="pageSubtitleLine"></span></div>
+            	<div class="pageTitle">
+
+                    <if condition="$_GET['type'] eq 0">
+                    公司动态
+                    <elseif condition="$_GET['type'] eq 1"/>
+                    投研视点
+                    <elseif condition="$_GET['type'] eq 2"/>
+                    业内资讯
+                    </if>
+            	</div>
+                <div class="pageSubtitle">
+                	<span class="pageSubtitleLine"></span>
+                	<if condition="$_GET['type'] eq 0">
+                    NEWS
+                    <elseif condition="$_GET['type'] eq 1"/>
+                    NEWS
+                    <elseif condition="$_GET['type'] eq 2"/>
+                    NEWS
+                    </if>
+                	<span class="pageSubtitleLine"></span>
+                </div>
             </div>
             <div class="newsListContainer">
             	<foreach name="result" item="item">

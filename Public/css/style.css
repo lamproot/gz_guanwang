@@ -232,7 +232,7 @@
 }
 .pageTitle{
 	font-size: 32px;
-    color: #010101;
+    color: #8A0E1B;
     margin-top: 50px;
 	/*margin-bottom:20px;*/
 }
@@ -447,8 +447,8 @@
 }
 /*公司简介*/
 .importantName{
-	font-size:30px;
-	color:#2a2a2a;
+	font-size:20px;
+	color:#292790;
 }
 .smallName{
 	font-size:12px;

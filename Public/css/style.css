@@ -291,7 +291,7 @@
 	color:#333;
 }
 .newsList:hover .newsListTextContent{
-	color:#333;
+	color:#999;
 }
 .newsList:hover .newsListImgContainer img{
 	transform:scale(1.1,1.1);
@@ -306,7 +306,7 @@
 }
 .newsListTextContent{
 	font-size:13px;
-	color:#777;
+	color:#999;
 	margin-top: 20px;
 }
 .newListTimeContainer{

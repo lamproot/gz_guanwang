@@ -4,7 +4,7 @@ return array(
 	'DB_TYPE'=>'mysql',
 	'DB_USER'=>'root',
 	'DB_PWD'=>'yiZFhoxA5M9c',
-	'DB_HOST'=>'10.28.69.232',
+	'DB_HOST'=>'localhost',
 	'DB_PORT'=>'3306',
 	'DB_PREFIX'=>'zx_',
 	'URL_MODEL' => '1',

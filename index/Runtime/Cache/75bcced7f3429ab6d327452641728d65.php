@@ -38,7 +38,7 @@ $(function(){
         <img src="__PUBLIC__/config/img/<?php echo ($banner); ?>" class="bannerImg" />
         <div class="breadContainer">
         	<div class="breadContent">
-            	<a href="articleList.html" class="breadA">新闻列表</a>
+            	<a href="__APP__/News" class="breadA">新闻列表</a>
                 <span class="breadSeparate">></span>
                 <a class="breadA select">新闻详情</a>
         	</div>

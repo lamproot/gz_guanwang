@@ -25,9 +25,9 @@ $(function(){
         </div>
         <div class="contactContainer">
         	<div class="contactDiv" style="background-image: url(__PUBLIC__/config/img/{$result['contactLogo']['value']})">
-            	<div class="contactText">{$result['contactText']['value']}<span></span><a href="{$result['contactMail']['value']}" class="mailClass">{$result['contactMail']['value']}</a></div>
+            	<div class="contactText">{$result['contactText']['value']}<span></span><a href="{$result['contactMail']['value']}" class="mailClass" style="color:#b42b34">{$result['contactMail']['value']}</a></div>
                 <div class="contactMail">
-                    <span>电话：</span><a href="tel:{$result['contactMail']['value']}" class="mailClass">{$result['contactTel']['value']}</a>
+                    <span style=" font-weight: 900;">电话：</span><a href="tel:{$result['contactMail']['value']}" class="mailClass">{$result['contactTel']['value']}</a>
                 </div>
             </div>
         </div>

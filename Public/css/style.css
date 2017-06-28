@@ -576,9 +576,9 @@
 }
 .businessItemImg{
 	margin-left: 26px;
-    margin-top: 30px;
+   /* margin-top: 30px;*/
     width: 343px;
-    height: 216px;
+   /* height: 216px;*/
     float: none;
 }
 .businessItemTitle{

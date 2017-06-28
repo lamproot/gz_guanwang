@@ -600,7 +600,8 @@
 	color:#666666;
 	font-size:15px;
 	padding:20px 26px;
-    overflow: hidden;
+	max-height: 102px;
+    overflow: scroll;
 }
 .businessItemBtn{
 	display:block;

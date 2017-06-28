@@ -13,7 +13,7 @@
         float:left;
         }
 .f_L{margin:0 auto; width:1200px;padding-top:48px;}
-.f_L ul li{margin-right:20px;float:right;border-left:1px solid #434343;}
+.f_L ul li{margin-right:20px;fborder-left:1px solid #434343;}
 .f_L ul li p{line-height:23px;font-size:13px;color:#434343;}
 .f_L ul li:first-child{background:url(../images/footer_ewm.jpg)no-repeat left top;border:none;}
 .f_L ul li:first-child p{text-indent:100px;}
@@ -29,12 +29,12 @@
     <div class="f_B">
         
         <div class="f_L">
-            <ul>
-                <li style="float:left">
+            <ul  style="float:left">
+                <li>
                     <p class="f_logo"></p>
                 </li>
             </ul>
-            <ul>
+            <ul style="float:right">
                 <li>
                     <p>联系电话：<span><?php echo $_SESSION['GuanWang']['contact_config'][0]['contactTel']['value']; ?></span></p>
                    
@@ -47,7 +47,7 @@
                     
                 </li>
             </ul>
-            <ul>
+            <ul style="float:right">
                 <li>
                     <p><?php echo $_SESSION['GuanWang']['web_config'][0]['record']['value']; ?></p>
                 </li>

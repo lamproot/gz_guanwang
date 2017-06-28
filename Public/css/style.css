@@ -601,7 +601,7 @@
 	font-size:15px;
 	padding:20px 26px;
 	max-height: 102px;
-    overflow: scroll;
+    overflow: hidden;
 }
 .businessItemBtn{
 	display:block;

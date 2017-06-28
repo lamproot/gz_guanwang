@@ -227,7 +227,7 @@
 	width:100%;
 }
 .pageTitleContainer{
-	height:150px;
+	height:100px;
 	text-align:center;
 }
 .pageTitle{
@@ -462,7 +462,7 @@
 }
 .companyTextContainer{
 	border-bottom:1px dashed #eee;
-	padding-bottom:70px;
+	padding-bottom:20px;
 }
 .cultureContainer{
 	margin-top:55px;

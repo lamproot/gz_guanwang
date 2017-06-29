@@ -31,6 +31,16 @@ $(function(){
   });
 })
 </script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ffe8719915417b50e16d5c62d343514d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
 </head>
 
 <body>
@@ -48,7 +58,7 @@ $(function(){
 	                    	<div class="newsListImgContainer businessItemImg">
 	                    		<?php if($item['logo'] != ''): ?><img src="__ROOT__/Uploads/images/segments/<?php echo ($item['logo']); ?>" style="width: 343px;height: auto;"/><?php endif; ?>
 	                        </div>
-	                        <div class="businessItemTitle"><?php echo ($item['name']); ?><i class="businessItemTitleIcon"></i></div>
+	                        <div class="businessItemTitle" style="color:#213890"><?php echo ($item['name']); ?><i class="businessItemTitleIcon"></i></div>
 	                        <div class="businessItemText">
 	                        	<?php echo ($item['desc']); ?>
 	                        </div>
@@ -58,7 +68,65 @@ $(function(){
             </div>
         </div>
     </div>
+<style type="text/css">/*底部*/
+.footer{width: 100%;margin:0 auto;position:relative; min-height:150px;background-color:#F6F7F7;}
+.f_line p.l_L{width:100% ;height:3px;background:#c3222e;position:absolute;top:0px;left:0px;}/*
+.f_line p.l_R{width:50%;height:3px;background:#204176;position:absolute;top:0px;left:630px;}*/
+.f_B{min-width:1200px;margin:0px auto;/* background:pink; */overflow: hidden;}
+.f_B p.f_logo{
+        width:300px;
+        height:115px;
+        background:url(__PUBLIC__/config/img/<?php echo $_SESSION['GuanWang']['web_config'][0]['logo']['value']; ?>)no-repeat 135px 0px;
+       /* padding-top:45px;
+        padding-left:45px;*/
 
+        float:left;
+        }
+.f_L{margin:0 auto; width:100%;padding-top:48px;}/*
+.f_L ul li{margin-right:20px;border-left:1px solid #434343;}*/
+.f_L ul li p{line-height:23px;font-size:13px;color:#434343;padding-right:25px;}
+@font-face {font-family:'Bauhaus Medium BT';src:url(../font/Bauhaus%20Md%20BT.TTF));}
+.f_L ul li p span{font-size:13px;color:#c3232d;line-height:25px;font-family:'Bauhaus Medium BT';}
+</style>
+<div class="footer">
+    <div class="f_line">
+        <p class="l_L"></p>
+        <p class="l_R"></p>
+    </div>
+    <div class="f_B">
+        
+        <div class="f_L">
+            <ul  style="float:right;float:left">
+                <li>
+                    <p class="f_logo"></p>
+                </li>
+            </ul>
+            <ul style="float:right">
+                <li>
+                <p>联系电话：<span><?php echo $_SESSION['GuanWang']['contact_config'][0]['contactTel']['value']; ?></span>   公司邮箱：<span><?php echo $_SESSION['GuanWang']['contact_config'][0]['contactMail']['value']; ?></span></p>
+                </li>
+                <!-- <li>
+                    <p>北京市朝阳区东三环南路58号 富顿中心A座706室 falaiou@falaiou.com</p>
+                </li> -->
+               <!--  <li>
+                    <p>公司邮箱：<span><?php echo $_SESSION['GuanWang']['contact_config'][0]['contactMail']['value']; ?></span></p>
+                    
+                </li> -->
+            </ul>
+            <ul style="float:right">
+                <li>
+                   <p> <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=35012202350127" target="_blank" rel="nofollow" style="text-decoration:none;"><img src="//f.7x24s.com/public/img/beian_gov_cn.png" style="vertical-align:middle;margin-right:5px;"></a><?php echo $_SESSION['GuanWang']['web_config'][0]['record']['value']; ?>&nbsp;<a href="https://tongji.baidu.com/web/welcome/login" target="_blank" title="百度统计"><img border="0" hspace="0" vspace="0" src="http://icon.cnzz.com/img/pic1.gif"></a></p>
+                </li>
+            </ul>
+
+            
+        </div>
+
+
+
+    </div>
+
+</div>
 <script type="text/javascript">
     function createHeader(){
         var headerStr='<meta name="viewport" content="width=device-width, initial-scale=1" /><div class="header">'+
@@ -69,24 +137,34 @@ $(function(){
                                     '<div class="topNavSelect"></div>'+
                                 '</div>'+
                                 '<div class="topNavContainer">'+
-                                    '<a class="topNav"><div>关于磐恩</div><div class="english">ABOUT</div><div class="topNavSecondMenuIcon"></div></a>'+
+                                    '<a class="topNav"><div>关于兰弯</div><div class="english">ABOUT</div><div class="topNavSecondMenuIcon"></div></a>'+
                                     '<div class="topNavSelect"></div>'+
                                     '<div class="topNavSecondMenuContainer">'+
                                         '<a href="__APP__/Company" class="topNavSecondMenuNav">公司简介</a>'+
-                                        '<a href="__APP__/Teams" class="topNavSecondMenuNav">团队介绍</a>'+
+                                        '<a href="__APP__/Teams" class="topNavSecondMenuNav">合作团队</a>'+
                                         '<a href="__APP__/Contact" class="topNavSecondMenuNav noBorder">联系我们</a>'+
                                     '</div>'+
                                 '</div>'+
                                 '<div class="topNavContainer">'+
-                                    '<a href="__APP__/Segments" class="topNav"><div>业务板块</div><div class="english">BUSINESS</div></a>'+
+                                    '<a href="__APP__/Segments" class="topNav"><div>业务板块</div><div class="english">BUSINESS</div><div class="topNavSecondMenuIcon"></div></a>'+
                                     '<div class="topNavSelect"></div>'+
+                                    '<div class="topNavSecondMenuContainer">'+
+                                        '<a href="__APP__/Segments/info?id=5" class="topNavSecondMenuNav">黄金T＋D</a>'+
+                                        '<a href="__APP__/Segments/info?id=6" class="topNavSecondMenuNav">股指期货</a>'+
+                                        '<a href="__APP__/Segments/info?id=7" class="topNavSecondMenuNav noBorder">财富管理</a>'+
+
+                                        
+                                    '</div>'+
                                 '</div>'+
                                 '<div class="topNavContainer">'+
                                     '<a class="topNav"><div>新闻动态</div><div class="english">NEWS</div><div class="topNavSecondMenuIcon"></div></a>'+
                                     '<div class="topNavSelect"></div>'+
                                     '<div class="topNavSecondMenuContainer">'+
-                                        '<a href="__APP__/News" class="topNavSecondMenuNav">行业文章</a>'+
-                                        '<a href="pennyNewsList.html" class="topNavSecondMenuNav noBorder">磐恩动态</a>'+
+                                        '<a href="__APP__/News/index?type=0" class="topNavSecondMenuNav">公司动态</a>'+
+                                        '<a href="__APP__/News/index?type=1" class="topNavSecondMenuNav">投研视点</a>'+
+                                        '<a href="__APP__/News/index?type=2" class="topNavSecondMenuNav noBorder">业内资讯</a>'+
+
+                                        
                                     '</div>'+
                                 '</div>'+
                             '</div>'+
@@ -138,9 +216,9 @@ $(function(){
 
     }
     function createFooter(){
-        var footerStr='<div style="height:50px;" class="bottomDiv"></div>'+
-                      '<div class="footer"><?php echo $_SESSION['GuanWang']['web_config'][0]['record']['value']; ?></div>';
-        $(".container").append(footerStr);
+        // var footerStr='<div style="height:50px;" class="bottomDiv"></div>'+
+        //               '<div class="footer"><?php echo $_SESSION['GuanWang']['web_config'][0]['record']['value']; ?></div>';
+        // $(".container").append(footerStr);
     }
     function getQueryString(name)
     {

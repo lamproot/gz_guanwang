@@ -6,5 +6,5 @@ config.ini
 Public/config/img
 Public/config/json/public.json
 Uploads
-index/Conf
-admin/Conf
+index/Conf/config.php
+admin/Conf/config.php

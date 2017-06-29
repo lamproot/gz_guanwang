@@ -95,30 +95,30 @@
                             '</div>'+
                     '</div>'+
                     '<div class="topDiv"></div>';
-        // $(".container").children().eq(0).before(headerStr);
-        // var header=$(".header").eq(0);
-        // var url=window.location.href;
-        // var position=url.lastIndexOf("/")+1;
-        // var position2=url.lastIndexOf("?");
-        // if(position2==-1)
-        //     position2=url.length;
-        // var href=url.substring(position,position2);
-        // if(href=="" || href=="index.html")
-        // {
-        //     header.find(".topNavContainer").eq(0).addClass("select");
-        // }
-        // else if(href=="articleList.html" || href=="pennyNewsList.html" || href=="newsInfo.html" || href=="articleInfo.html")
-        // {
-        //     header.find(".topNavContainer").eq(3).addClass("select");
-        // }
-        // else if(href=="teamIntro.html" || href=="companyIntro.html" || href=="contact.html")
-        // {
-        //     header.find(".topNavContainer").eq(1).addClass("select");
-        // }
-        // else if(href=="segments.html" || href=="badAssetsTeam.html" || href=="listedCompany.html" || href=="wealthManage.html")
-        // {
-        //     header.find(".topNavContainer").eq(2).addClass("select");
-        // }
+        $(".container").children().eq(0).before(headerStr);
+        var header=$(".header").eq(0);
+        var url=window.location.href;
+        var position=url.lastIndexOf("/")+1;
+        var position2=url.lastIndexOf("?");
+        if(position2==-1)
+            position2=url.length;
+        var href=url.substring(position,position2);
+        if(href=="" || href=="index.html")
+        {
+            header.find(".topNavContainer").eq(0).addClass("select");
+        }
+        else if(href=="articleList.html" || href=="pennyNewsList.html" || href=="newsInfo.html" || href=="articleInfo.html")
+        {
+            header.find(".topNavContainer").eq(3).addClass("select");
+        }
+        else if(href=="teamIntro.html" || href=="companyIntro.html" || href=="contact.html")
+        {
+            header.find(".topNavContainer").eq(1).addClass("select");
+        }
+        else if(href=="segments.html" || href=="badAssetsTeam.html" || href=="listedCompany.html" || href=="wealthManage.html")
+        {
+            header.find(".topNavContainer").eq(2).addClass("select");
+        }
 
         changeNavHeight();
         $(".header").addClass("headerTransition");

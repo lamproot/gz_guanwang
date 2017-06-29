@@ -3,7 +3,8 @@
 config.ini
 .DS_Store
 *Runtime
-Public/config
+Public/config/img
+Public/config/json/public.json
 Uploads
-index/Config
-admin/Config
+index/Conf
+admin/Conf

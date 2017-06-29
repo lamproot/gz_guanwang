@@ -10,7 +10,7 @@
 	height:90px;
 	background-color:#fff;
 	box-shadow: 1px 1px 5px #eee;
-	position:fixed;
+	/*position:fixed;*/
 	width:100%;
 	z-index:5;
 	min-width:1200px;

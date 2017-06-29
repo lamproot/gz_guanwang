@@ -10,17 +10,12 @@
               "value": "兰弯财富"
           },
           "record": {
-<<<<<<< HEAD
-              "//": "网站底部备案内容",
-              "value": "©2012-2017 All Rights Reserved. &nbsp;&nbsp;兰弯 www.lanwandl.com 版权所有 &nbsp;&nbsp; 备案号：京ICP备12019481号-5"
-=======
               "//": "文案说明",
               "value": "兰弯 www.lanwandl.com 版权所有    备案号：京ICP备12019481号-5 "
           },
           "footer": {
               "//": "底部文案",
               "value": "©2012-2017 All Rights Reserved."
->>>>>>> ef555119cdcc1fae1610d819b7a6a39b28821be0
           },
           "title": {
               "//": "官网名称",

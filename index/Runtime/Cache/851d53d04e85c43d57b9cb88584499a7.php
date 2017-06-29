@@ -31,6 +31,16 @@ $(function(){
   });
 })
 </script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ffe8719915417b50e16d5c62d343514d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
 </head>
 
 <body>
@@ -48,7 +58,6 @@ $(function(){
 		</div>
 	</div>
 </div>
-
 <script type="text/javascript">
     function createHeader(){
         var headerStr='<meta name="viewport" content="width=device-width, initial-scale=1" /><div class="header">'+
@@ -59,11 +68,11 @@ $(function(){
                                     '<div class="topNavSelect"></div>'+
                                 '</div>'+
                                 '<div class="topNavContainer">'+
-                                    '<a class="topNav"><div>关于磐恩</div><div class="english">ABOUT</div><div class="topNavSecondMenuIcon"></div></a>'+
+                                    '<a class="topNav"><div>关于兰弯</div><div class="english">ABOUT</div><div class="topNavSecondMenuIcon"></div></a>'+
                                     '<div class="topNavSelect"></div>'+
                                     '<div class="topNavSecondMenuContainer">'+
                                         '<a href="__APP__/Company" class="topNavSecondMenuNav">公司简介</a>'+
-                                        '<a href="__APP__/Teams" class="topNavSecondMenuNav">团队介绍</a>'+
+                                        '<a href="__APP__/Teams" class="topNavSecondMenuNav">合作团队</a>'+
                                         '<a href="__APP__/Contact" class="topNavSecondMenuNav noBorder">联系我们</a>'+
                                     '</div>'+
                                 '</div>'+
@@ -75,8 +84,11 @@ $(function(){
                                     '<a class="topNav"><div>新闻动态</div><div class="english">NEWS</div><div class="topNavSecondMenuIcon"></div></a>'+
                                     '<div class="topNavSelect"></div>'+
                                     '<div class="topNavSecondMenuContainer">'+
-                                        '<a href="__APP__/News" class="topNavSecondMenuNav">行业文章</a>'+
-                                        '<a href="pennyNewsList.html" class="topNavSecondMenuNav noBorder">磐恩动态</a>'+
+                                        '<a href="__APP__/News/index?type=0" class="topNavSecondMenuNav">公司动态</a>'+
+                                        '<a href="__APP__/News/index?type=1" class="topNavSecondMenuNav">投研视点</a>'+
+                                        '<a href="__APP__/News/index?type=2" class="topNavSecondMenuNav">业内资讯</a>'+
+
+                                        
                                     '</div>'+
                                 '</div>'+
                             '</div>'+

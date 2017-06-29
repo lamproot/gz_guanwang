@@ -10,8 +10,12 @@
               "value": "小熊测试啊"
           },
           "record": {
-              "//": "网站底部备案内容",
-              "value": "公司邮箱:Demo1@penny-capital.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;京ICP备Demo号-1"
+              "//": "文案说明",
+              "value": "兰弯 www.lanwandl.com 版权所有    备案号：京ICP备12019481号-5 "
+          },
+          "footer": {
+              "//": "底部文案",
+              "value": "©2012-2017 All Rights Reserved."
           },
           "title": {
               "//": "官网名称",

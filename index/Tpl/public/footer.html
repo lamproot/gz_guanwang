@@ -2,7 +2,7 @@
 .footer{width: 100%;margin:0 auto;position:relative; min-height:150px;background-color:#F6F7F7;}
 .f_line p.l_L{width:100% ;height:3px;background:#c3222e;position:absolute;top:0px;left:0px;}/*
 .f_line p.l_R{width:50%;height:3px;background:#204176;position:absolute;top:0px;left:630px;}*/
-.f_B{min-width:1200px;margin:0px auto;/* background:pink; */overflow: hidden;}
+.f_B{min-width:1200px;margin:0px auto; background:#F6F7F7;overflow: hidden;}
 .f_B p.f_logo{
         width:300px;
         height:115px;
@@ -43,9 +43,11 @@
                     
                 </li> -->
                 <li>
-                   <p> <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=35012202350127" target="_blank" rel="nofollow" style="text-decoration:none;"><img src="//f.7x24s.com/public/img/beian_gov_cn.png" style="vertical-align:middle;margin-right:5px;"></a><?php echo $_SESSION['GuanWang']['web_config'][0]['record']['value']; ?>&nbsp;<a href="https://tongji.baidu.com/web/welcome/login" target="_blank" title="百度统计"><img border="0" hspace="0" vspace="0" src="http://icon.cnzz.com/img/pic1.gif"></a></p>
+                   <p> <?php echo $_SESSION['GuanWang']['web_config'][0]['record']['value']; ?>&nbsp;<a href="https://tongji.baidu.com/web/welcome/login" target="_blank" title="百度统计"><img border="0" hspace="0" vspace="0" src="http://icon.cnzz.com/img/pic1.gif"></a></p>
                 </li>
             </ul>
+
+
          
 
             
@@ -53,6 +55,19 @@
 
 
 
+    </div>
+    <div class="f_line">
+        <p class="" style="width: 100%;height: 1px;background: #ccc;"></p>
+        <p class="l_R"></p>
+    </div>
+
+    <!-- <div>
+        <p class="f_logo"></p>
+        <p>联系电话：<span><?php echo $_SESSION['GuanWang']['contact_config'][0]['contactTel']['value']; ?></span>   公司邮箱：<span><?php echo $_SESSION['GuanWang']['contact_config'][0]['contactMail']['value']; ?></span></p>
+         <p> <?php echo $_SESSION['GuanWang']['web_config'][0]['record']['value']; ?>&nbsp;<a href="https://tongji.baidu.com/web/welcome/login" target="_blank" title="百度统计"><img border="0" hspace="0" vspace="0" src="http://icon.cnzz.com/img/pic1.gif"></a></p>
+    </div> -->
+    <div>
+        <p><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=35012202350127" target="_blank" rel="nofollow" style="text-decoration:none;"><img src="//f.7x24s.com/public/img/beian_gov_cn.png" style="vertical-align:middle;margin-right:5px;"></a><?php echo $_SESSION['GuanWang']['web_config'][0]['footer']['value']; ?></p>
     </div>
 
 </div>

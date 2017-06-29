@@ -37,7 +37,9 @@ $(function(){
 			                	<if condition="$item_item['team_class_id'] eq $item['id']">
 			                    	<a class="newsList teamIntro">
 			                            <div class="newsListImgContainer">
-			                                <img src="img/zc1.jpg"/>
+			                            	<if condition="$item.logo neq ''">
+			                                <img src="__ROOT__/Uploads/images/teams/{$item.logo}"/>
+			                           		</if>
 			                            </div>
 			                            <div class="newsListTextContainer">
 			                                <div class="newsListTextTitle"><span class="important">{$item_item['name']}</span></div>

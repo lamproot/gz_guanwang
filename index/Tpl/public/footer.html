@@ -54,7 +54,7 @@
 </div>
 <script type="text/javascript">
     function createHeader(){
-        var headerStr='<meta name="viewport" content="width=device-width, initial-scale=1" /><div class="header">'+
+        var headerStr='<div class="header">'+
                             '<div class="logoImg" style="background-image: url(__PUBLIC__/config/img/<?php echo $_SESSION['GuanWang']['web_config'][0]['logo']['value']; ?>);"></div>'+
                             '<div class="topNavBigContainer">'+
                                 '<div class="topNavContainer">'+
@@ -62,7 +62,7 @@
                                     '<div class="topNavSelect"></div>'+
                                 '</div>'+
                                 '<div class="topNavContainer">'+
-                                    '<a class="topNav"><div>关于兰弯</div><div class="english">ABOUT</div><div class="topNavSecondMenuIcon"></div></a>'+
+                                    '<a class="topNav" href="__APP__/Company"><div>关于兰弯</div><div class="english">ABOUT</div><div class="topNavSecondMenuIcon"></div></a>'+
                                     '<div class="topNavSelect"></div>'+
                                     '<div class="topNavSecondMenuContainer">'+
                                         '<a href="__APP__/Company" class="topNavSecondMenuNav">公司简介</a>'+
@@ -82,7 +82,7 @@
                                     '</div>'+
                                 '</div>'+
                                 '<div class="topNavContainer">'+
-                                    '<a class="topNav"><div>新闻动态</div><div class="english">NEWS</div><div class="topNavSecondMenuIcon"></div></a>'+
+                                    '<a class="topNav" href="#"><div>新闻动态</div><div class="english">NEWS</div><div class="topNavSecondMenuIcon"></div></a>'+
                                     '<div class="topNavSelect"></div>'+
                                     '<div class="topNavSecondMenuContainer">'+
                                         '<a href="__APP__/News/index?type=0" class="topNavSecondMenuNav">公司动态</a>'+

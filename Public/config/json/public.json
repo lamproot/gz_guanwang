@@ -44,17 +44,20 @@
     "home_banner_config": [
         {
             "name":"首页banner01",
-            "url": "banner-large-1.jpg",
+            "pc_url": "banner-large-1.jpg",
+            "mobile_url": "banner-large-m-1.jpg",
             "sort":"0"
         },
         {
             "name":"首页banner02",
-            "url": "banner-large-2.jpg",
+            "pc_url": "banner-large-2.jpg",
+            "mobile_url": "banner-large-m-2.jpg",
             "sort":"0"
         },
         {
             "name":"首页banner03",
-            "url": "banner-large-3.jpg",
+            "pc_url": "banner-large-3.jpg",
+            "mobile_url": "banner-large-m-3.jpg",
             "sort":"0"
         }
     ],

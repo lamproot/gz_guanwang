@@ -8,7 +8,7 @@
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
 				<foreach name="banner" item="item">
-					<div class="swiper-slide" data-pc-src="__PUBLIC__/config/img/{$item['pc_url']}" data-mobile-src="__PUBLIC__/config/img/{$item['mobile_url']}"   style="background-image:url(__PUBLIC__/config/img/{$item['pc_url']});">
+					<div class="swiper-slide" data-pc-src="__PUBLIC__/config/img/{$item['pc_url']}" data-mobile-src="__PUBLIC__/config/img/{$item['mobile_url']}">
 					</div>
 				</foreach>
 			</div>
@@ -30,12 +30,12 @@
 		var _width=$("body").width();//获取当前窗口的宽度
 		if (_height >= _width) {
 			$(".swiper-slide").each(function(){
-				var url = $(this).attr("data-pc-src")
+				var url = $(this).attr("data-mobile-src")
 		    	$(this).css('background-image', 'url('+url+')')
 		  	});
 		} else {
 			$(".swiper-slide").each(function(){
-				var url = $(this).attr("data-mobile-src")
+				var url = $(this).attr("data-pc-src")
 		    	$(this).css('background-image', 'url('+url+')')
 		  	});
 		}

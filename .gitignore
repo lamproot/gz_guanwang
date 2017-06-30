@@ -4,7 +4,7 @@ config.ini
 .DS_Store
 *Runtime
 Public/config/img
-Public/config/json/public.json
+public.json
 Uploads
 index/Conf/config.php
 admin/Conf/config.php

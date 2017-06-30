@@ -8,4 +8,4 @@ Public/config/json/public.json
 Uploads
 index/Conf/config.php
 admin/Conf/config.php
-*public.json
+*.json

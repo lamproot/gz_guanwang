@@ -1,4 +1,12 @@
 <include file="public:header" />
+<style type="text/css">
+	.container{
+		color:#333;
+		min-height:100%;
+		position:relative;
+		min-width:100% !important;
+	}
+</style>
 <div class="container">
 	<div class="bannerContainer">
 		<div class="bannerControl left">
@@ -24,6 +32,39 @@
 	// 	alert("高小于宽")
 	// }
 	//http://img.hb.aicdn.com/bd42c8fae27e81d9244debd60acf4a486de9524f20270-2sYqdw_fw658
+
+	
+
+	window.orientation = function(){
+		//alert("宽度："+document.documentElement.clientWidth+"，高度："+document.documentElement.clientHeight)
+		var _height=$("body").height();//获取当前窗口的高度
+		var _width=$("body").width();//获取当前窗口的宽度
+		if (_height >= _width) {
+			$(".swiper-slide").each(function(){
+				var url = $(this).attr("data-mobile-src")
+		    	$(this).css('background-image', 'url('+url+')')
+		  	});
+		} else {
+			$(".swiper-slide").each(function(){
+				var url = $(this).attr("data-pc-src")
+		    	$(this).css('background-image', 'url('+url+')')
+		  	});
+		}
+		changeHomeBannerHeight();
+  var mySwiper = $('.swiper-container').swiper({
+      autoplay : 5000,
+      speed:800,
+      loop: true
+  });
+  $(".bannerControl.left").bind("click",function(e){
+      mySwiper.swipePrev();
+  });
+   $(".bannerControl.right").bind("click",function(e){
+       mySwiper.swipeNext();
+  });
+	}
+
+
 	window.onload = function(){
 		//alert("宽度："+document.documentElement.clientWidth+"，高度："+document.documentElement.clientHeight)
 		var _height=$("body").height();//获取当前窗口的高度

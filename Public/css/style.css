@@ -4,7 +4,7 @@
 	color:#333;
 	min-height:100%;
 	position:relative;
-	min-width:100%;
+	min-width:1200px;
 }
 .header{
 	height:90px;
@@ -13,14 +13,14 @@
 	position:absolute;
 	width:100%;
 	z-index:5;
-	min-width:100%;
+	min-width:1200px;
 	top:0;
 	left:0;
 }
 .logoImg{
 	margin-top:18px;
-	margin-left:80px;
-	width:132px;
+	margin-left:100px;
+	width:142px;
 	height:51px;
 	background-image:url(../img/logo.png);
 	background-repeat:no-repeat;
@@ -33,7 +33,7 @@
 	margin-right:90px;
 }
 .topNavContainer{
-	width:190px;
+	width:210px;
 	float:left;
 	text-align:center;
 	height:100%;

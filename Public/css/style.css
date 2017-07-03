@@ -184,7 +184,9 @@
 	height:100%;
 	float:left;
 	background-repeat:no-repeat;
-	background-position:center center;
+	background-position:top center;
+	background-size: 100% auto !important;
+    -moz-background-size: 100% auto;
 }
 .bannerControl{
 	width:64px;

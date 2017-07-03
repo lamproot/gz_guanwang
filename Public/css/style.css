@@ -5,6 +5,7 @@
 	min-height:100%;
 	position:relative;
 	min-width:100%;
+	text-align: center;
 }
 .header{
 	height:90px;
@@ -13,7 +14,7 @@
 	position:absolute;
 	width:100%;
 	z-index:5;
-	min-width:1000px;
+	min-width:100%;
 	top:0;
 	left:0;
 }
@@ -33,7 +34,7 @@
 	margin-right:90px;
 }
 .topNavContainer{
-	width:210px;
+	width:190px;
 	float:left;
 	text-align:center;
 	height:100%;
@@ -221,7 +222,7 @@
 }
 /*行业文章*/
 .contentContainer{
-	width:1000px;
+	width:1200px;
 	margin:0 auto;
 	margin-bottom:100px;
 }
@@ -343,7 +344,7 @@
 	margin-top:-8px;
 }
 .breadContent{
-	width:1000px;
+	width:1200px;
 	margin:0 auto;
 }
 .breadA{
@@ -508,7 +509,7 @@
 }
 /*联系我们*/
 .contactDiv{
-	width:1000px;
+	width:1200px;
 	height:302px;
 	background-image:url(../img/contactBg.jpg);
 	background-repeat:no-repeat;

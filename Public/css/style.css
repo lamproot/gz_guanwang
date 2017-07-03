@@ -13,14 +13,14 @@
 	position:absolute;
 	width:100%;
 	z-index:5;
-	min-width:1200px;
+	min-width:100%;
 	top:0;
 	left:0;
 }
 .logoImg{
 	margin-top:18px;
-	margin-left:100px;
-	width:142px;
+	margin-left:80px;
+	width:132px;
 	height:51px;
 	background-image:url(../img/logo.png);
 	background-repeat:no-repeat;

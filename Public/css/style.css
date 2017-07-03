@@ -221,7 +221,7 @@
 }
 /*行业文章*/
 .contentContainer{
-	width:100%;
+	width:1200px;
 	margin:0 auto;
 	margin-bottom:100px;
 }
@@ -343,7 +343,7 @@
 	margin-top:-8px;
 }
 .breadContent{
-	width:100%;
+	width:1200px;
 	margin:0 auto;
 }
 .breadA{
@@ -508,7 +508,7 @@
 }
 /*联系我们*/
 .contactDiv{
-	width:100%;
+	width:1200px;
 	height:302px;
 	background-image:url(../img/contactBg.jpg);
 	background-repeat:no-repeat;
